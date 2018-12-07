@@ -1,9 +1,21 @@
-
+h1{
+    text-align: center;
+}
 .container{
     width: 80%;
     margin: 30px auto;
 }
 
+.container>p{
+    background: #39a439;
+    color: #fff;
+    padding: 20px;
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+}
 .container>div{
     border: 1px solid #ccc;
     border-radius: 20px;
