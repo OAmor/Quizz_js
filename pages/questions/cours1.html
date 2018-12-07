@@ -1,68 +1,53 @@
 <html>
     <head>
         <title>Cours 1 | Questions</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="../../styles/questions.css">
     </head>
     <body>
         <h1>Questions (COURS 1)</h1>
-        <input type="hidden" name="questions_number" value="5">
+        <input id="nbr_quest" type="hidden" name="questions_number" value="4">
         <div class="container">
             <p class="result"></p>
             <div class="question">
                 <p class="question-body">Test Question 1</p>
                 <div class="question-content">
-                    <p><input type="radio" name="q1"> reponse 1</p>
-                    <p><input type="radio" name="q1"> reponse 2</p>
-                    <p><input type="radio" name="q1"> reponse 3</p>
-                    <p><input type="radio" name="q1"> reponse 4</p>
+                    <p><input type="radio" name="q1" value="a"> reponse 1</p>
+                    <p><input type="radio" name="q1" value="b"> reponse 2</p>
+                    <p><input type="radio" name="q1" value="c"> reponse 3</p>
+                    <p><input type="radio" name="q1" value="d"> reponse 4</p>
                 </div>
             </div>
             <div class="question">
-                <p class="question-body">Test Question 1</p>
+                <p class="question-body">Test Question 2</p>
                 <div class="question-content">
-                    <p><input type="radio" name="q2"> reponse 1</p>
-                    <p><input type="radio" name="q2"> reponse 2</p>
-                    <p><input type="radio" name="q2"> reponse 3</p>
-                    <p><input type="radio" name="q2"> reponse 4</p>
+                    <p><input type="radio" name="q2" value="a"> reponse 1</p>
+                    <p><input type="radio" name="q2" value="b"> reponse 3</p>
+                    <p><input type="radio" name="q2" value="c"> reponse 4</p>
+                    <p><input type="radio" name="q2" value="d"> reponse 2</p>
                 </div>
             </div>
             <div class="question">
-                <p class="question-body">Test Question 1</p>
+                <p class="question-body">Test Question 3</p>
                 <div class="question-content">
-                    <p><input type="radio" name="q3"> reponse 1</p>
-                    <p><input type="radio" name="q3"> reponse 2</p>
-                    <p><input type="radio" name="q3"> reponse 3</p>
-                    <p><input type="radio" name="q3"> reponse 4</p>
+                    <p><input type="radio" name="q3" value="a"> reponse 1</p>
+                    <p><input type="radio" name="q3" value="b"> reponse 2</p>
+                    <p><input type="radio" name="q3" value="c"> reponse 3</p>
+                    <p><input type="radio" name="q3" value="d"> reponse 4</p>
                 </div>
             </div>
             <div class="question">
-                <p class="question-body">Test Question 1</p>
+                <p class="question-body">Test Question 4</p>
                 <div class="question-content">
-                    <p><input type="radio" name="q4"> reponse 1</p>
-                    <p><input type="radio" name="q4"> reponse 2</p>
-                    <p><input type="radio" name="q4"> reponse 3</p>
-                    <p><input type="radio" name="q4"> reponse 4</p>
+                    <p><input type="radio" name="q4" value="a"> reponse 1</p>
+                    <p><input type="radio" name="q4" value="b"> reponse 2</p>
+                    <p><input type="radio" name="q4" value="c"> reponse 3</p>
+                    <p><input type="radio" name="q4" value="d"> reponse 4</p>
                 </div>
             </div>
-            <div class="question">
-                <p class="question-body">Test Question 1</p>
-                <div class="question-content">
-                    <p><input type="radio" name="q5"> reponse 1</p>
-                    <p><input type="radio" name="q5"> reponse 2</p>
-                    <p><input type="radio" name="q5"> reponse 3</p>
-                    <p><input type="radio" name="q5"> reponse 4</p>
-                </div>
-            </div>
-            <div class="question">
-                <p class="question-body">Test Question 1</p>
-                <div class="question-content">
-                    <p><input type="radio" name="q6"> reponse 1</p>
-                    <p><input type="radio" name="q6"> reponse 2</p>
-                    <p><input type="radio" name="q6"> reponse 3</p>
-                    <p><input type="radio" name="q6"> reponse 4</p>
-                </div>
-            </div>
-            <a class="effet-centre" href="#">Voir le resultat</a>
+            <a onclick="calcScore(1)" class="effet-centre" href="#">Voir le resultat</a>
         </div>
+        <script src="../../data/data.js"></script>
+        <script src="../../scripts/main.js"></script>
     </body>
 </html>
