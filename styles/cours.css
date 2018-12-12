@@ -81,3 +81,74 @@ header>div article P{
     text-align: justify;
     margin-top: 5px;
 }
+
+
+/* Cours Contenu */
+
+#container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#container section{
+    width: 75%;
+    float: left;
+    padding: 20px;
+}
+
+#container section h2{
+    font-size: 32px;
+}
+
+#container section p{
+    font-size: 14px;
+    text-align: justify;
+    color: #666;
+}
+#container section>aside{
+    margin: 40px auto;
+    width: 60%;
+}
+#container section>aside a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+#container section>aside a:first-child{
+    -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
+    background-image: linear-gradient(to right,#263e74,#28006a);
+    color: #fff;
+    margin-right: 50px;
+}
+#container section>aside a:last-child{
+    border: 1px solid #28006a;
+    color: #28006a;
+}
+
+#container>aside{
+    width: 20%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    box-shadow: -8px 4px 13px -5px #333;
+}
+#container>aside ul{
+    list-style: none;
+    margin-top: 30px;
+}
+#container>aside ul li{
+    margin-bottom: 25px;
+}
+#container aside ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
+    background-image: linear-gradient(to right,#263e74,#28006a);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
