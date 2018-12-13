@@ -26,7 +26,7 @@ function calcScore(course) {
     for(var i=1; i<=nbr;i++){
         var j,res = getResponse('q'+i),
             answer = quizz[i-1].response.variable,
-            answers = questions[i-1].getElementsByTagName('p');
+            answers = questions[i-1].getElementsByTagName('li');
 
         console.log("compare q"+i +"= "+res+" with : "+quizz[i-1].response.variable);
         if(res == answer){
@@ -35,14 +35,14 @@ function calcScore(course) {
 
         for(j = 0;j<answers.length;j++){
             if(answers[j].getElementsByTagName('input')[0].value == answer){
-                answers[j].style.color = "#080"
+                answers[j].getElementsByTagName('label')[0].style.background = "#01A99C"
             }else if(answers[j].getElementsByTagName('input')[0].value == res){
-                answers[j].style.color = "#f00"
+                answers[j].getElementsByTagName('label')[0].style.background = "#DF1C3E"
             }
         }
     }
 
 
     result.innerText = "Votre Score = "+score + " / "+nbr;
-    result.style.display = "block"
+    result.style.visibility = "visible"
 }
