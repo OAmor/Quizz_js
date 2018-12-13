@@ -35,9 +35,11 @@ function calcScore(course) {
 
         for(j = 0;j<answers.length;j++){
             if(answers[j].getElementsByTagName('input')[0].value == answer){
-                answers[j].getElementsByTagName('label')[0].style.background = "#01A99C"
+                answers[j].getElementsByTagName('label')[0].style.background = "#00A99D"
+                answers[j].getElementsByTagName('label')[0].style.color = "#FFF"
             }else if(answers[j].getElementsByTagName('input')[0].value == res){
-                answers[j].getElementsByTagName('label')[0].style.background = "#DF1C3E"
+                answers[j].getElementsByTagName('label')[0].style.background = "#DD1B3C"
+                answers[j].getElementsByTagName('label')[0].style.color = "#FFF"
             }
         }
     }
