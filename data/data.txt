@@ -46,7 +46,7 @@ else
 }
 - L'héritage :
 
-Comme je vous l'ai dit dans l'introduction, la notion d'héritage est l'un des fondements de la programmation orientée objet. Grâce
+La notion d'héritage est l'un des fondements de la programmation orientée objet. Grâce
 à elle, nous pourrons créer des classes héritées (aussi appelées classes classes dérivées) de nos classes mères (aussi appelées
 classes classes de base). Nous pourrons créer autant de classes dérivées, par rapport à notre classe de base, que nous le
 souhaitons. De plus, nous pourrons nous servir d'une classe dérivée comme d'une classe de base pour élaborer encore une autre
@@ -175,7 +175,7 @@ Ses principaux avantages, pour reprendre les principaux arguments du site offici
 
 
 
-- Declaratiiondes variable
+- Declaration des variable
 
 En Kotlin, on distingue les variables dont on peut changer la valeur, et les variables immuables qui ne sont pas tout à fait des constantes :
 

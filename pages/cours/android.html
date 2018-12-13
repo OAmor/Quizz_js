@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Android</title>
+        <link rel="stylesheet" href="../../styles/cours.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="../../images/EduGateLogo.png" alt="logo">
+                <ul>
+                    <li><a href="#" class="active">Java</a></li>
+                    <li><a href="#">Cours 02</a></li>
+                    <li><a href="#">Cours 03</a></li>
+                    <li><a href="#">Cours 04</a></li>
+                </ul>
+            </nav>
+            <div style="background-image:url('../../images/css-cover.jpg') ">
+                <div class="overlay"></div>
+                <article>
+                    <h1>JAVA</h1>
+                
+                </article>
+            </div>
+        </header>
+        <div id="container">
+            <section>
+                <h2>Historique</h2>
+                <p>Android est un OS mobile Open Source pour smartphone, PDA, MP3 et tablette. Conçu initialement par Android Inc , il a été racheté par Google en 2005.
+
+Pour commencer la programmation Android, il faut d'abord installer le SDK Android et comprendre les bases de la programmation sous Android. Puis nous allons faire notre premier programme sous Android c'est-à-dire le bien connu « Hello Word » pour bien comprendre ces bases. </p>
+                <h2>Composantes d'une application Android</h2>
+                <p>
+                    <ul>Une application Android est composée d'éléments de base : 
+
+                    <li>Activities (Activités en français) :  Une activité est la composante principale pour une application Android. Elle représente l'implémentation métier dans une application Android. </li>
+
+                    <li>Services :  Un service, à la différence d'une activité, ne possède pas de vue mais permet l'exécution d'un algorithme sur un temps indéfini. Il ne s'arrêtera que lorsque la tâche est finie ou que son exécution est arrêtée. </li>
+
+                    <li>Broadcast and Intent Receivers : Un Broadcast Receiver comme son nom l'indique permet d'écouter ce qui se passe sur le système ou sur votre application et déclencher une action que vous aurez prédéfinie. C'est souvent par ce mécanisme que les services sont lancés.</li>
+
+                    <li>Content providers : <ul>
+
+
+                Les « content providers » servent à accéder à des données depuis votre application. Vous pouvez accéder :
+
+                    <li>aux contacts stockés dans le téléphone ;</li>
+                    <li>à l'agenda ;</li>
+                    <li>aux photos ;</li>
+                    <li>ainsi qu'à d'autres données depuis votre application grâce aux content providers.</li></ul></li></ul>
+                </p>
+                <h2>Cycle de vie d'une application Android</h2>
+                <p><ul><li>OnCreate : 
+
+
+                    Cette méthode est appelée à la création de votre activité (Activity). Elle sert à initialiser votre activité ainsi que toutes les données nécessaires à cette dernière.
+
+                    Quand la méthode OnCreate est appelée, on lui passe un Bundle en argument. Ce Bundle contient l'état de sauvegarde enregistré lors de la dernière exécution de votre activité.</li>
+                    <li>onStart : 
+
+
+                    Cette méthode est appelée dans le cas où votre application est en arrière-plan et qu'elle repasse en avant-plan.
+
+                    Si votre activité ne peut pas aller en avant-plan quelle que soit la raison, l'activité sera transférée à OnStop.</li>
+                    <li>onResume : 
+
+
+                    Cette méthode est appelée après OnStart (au moment où votre application repasse en avant-plan).
+
+                    OnResume est aussi appelée quand votre application passe en arrière-plan à cause d'une autre application.</li>
+                    <li>onPause
+
+
+                    Appelée juste avant qu'une autre activité que la vôtre passe en OnResume. À ce stade, votre activité n'a plus accès à l'écran, vous devez arrêter de faire toute action en rapport avec l'interaction utilisateur. Vous pouvez par contre continuer à exécuter des algorithmes nécessaires mais qui ne consomment pas trop de CPU.</li>
+                    <li>onStop : 
+
+
+                    Appelée quand votre activité n'est plus visible quelle que soit la raison.</li>
+                    <li>onDestroy : 
+
+
+                    Appelée quand votre application est totalement fermée (Processus terminé).</li></ul></p>
+                <h2>La communication entre composants</h2>
+                    <p>Les agents qui sont chargés de ce mécanisme d'échange s'appellent les intents. Par exemple, si l'utilisateur clique sur un numéro de téléphone dans votre application, peut-être souhaiteriez-vous que le téléphone appelle le numéro demandé. Avec un intent, vous allez dire à tout le système que vous avez un numéro qu'il faut appeler, et c'est le système qui fera en sorte de trouver les applications qui peuvent le prendre en charge. Ce mécanisme est tellement important qu'Android lui-même l'utilise massivement en interne.
+                    pattern : Intent intent = new Intent(Activite_de_depart.this, Activite_de_destination.class);</p><br>
+
+                    </p>
+
+                <aside>
+                    <a href="../questions/cours1.html">Aller au QUIZZ</a>
+                    <a href="cours2.html">Prohain cours</a>
+                </aside>
+            </section>
+            <aside>
+                <ul>
+                    <li><a href="#">Historique</a></li>
+                    <li><a href="#">Les variables et les opérateurs</a></li>
+                    <li><a href="#">Lire les entrées clavier</a></li>
+                    <li><a href="#">L'héritage</a></li>
+                    <li><a href="#">Quizz</a></li>
+                </ul>
+            </aside>
+            <div style="clear: both"></div>
+        </div>
+    <!--
+    <a class="effet-gauche" href="../questions/cours1.html">Passer Aux Questions</a>-->
+    </body>
+</html>

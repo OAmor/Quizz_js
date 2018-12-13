@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Kotlin</title>
+        <link rel="stylesheet" href="../../styles/cours.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="../../images/EduGateLogo.png" alt="logo">
+                <ul>
+                    <li><a href="#" class="active">Java</a></li>
+                    <li><a href="#">Cours 02</a></li>
+                    <li><a href="#">Cours 03</a></li>
+                    <li><a href="#">Cours 04</a></li>
+                </ul>
+            </nav>
+            <div style="background-image:url('../../images/css-cover.jpg') ">
+                <div class="overlay"></div>
+                <article>
+                    <h1>Kotlin</h1>
+                
+                </article>
+            </div>
+        </header>
+        <div id="container">
+            <section>
+                <h2>Historique</h2>
+                <p>Le langage Kotlin est un langage développé par JetBrains, entreprise conceptrice de l'EDI Intellij Idea entre autres. Cependant il est open-source.
+
+Ses principaux avantages, pour reprendre les principaux arguments du site officiel, résident dans la simplification du code pour de nombreuses tâches courantes (par exemple, la création de POJO), une sécurité de code accrue grâce à un contrôle plus stricte que Java (notamment pour la nullité des valeurs), et une facilité d’interaction vers et à partir du langage Java et avec la JVM - ce qui permet notamment la réutilisation directe de la plupart des codes écrits en Java.</p>
+                <h2>Declaration des variables</h2>
+                <p>En Kotlin, on distingue les variables dont on peut changer la valeur, et les variables immuables qui ne sont pas tout à fait des constantes :
+<ul>
+    <li>le mot-clé val permet de déclarer une variable immuable</li>
+    <li>le mots-clé var permet de déclarer une variable altérable.</li>
+</ul>
+
+
+pattern : val/var nom_de_variable : type = "Valeur initial"
+Example : 
+val nom:String = "IL"
+// nom = "Master IL" // Interdit !!! Car nom a été déclaré avec val
+var age = 10
+age += 12 // aucun problème car age est altérable.
+
+Pour rappel, il faut préciser le type de variable après le nom, et pas avant comme en Java.
+                </p>
+                <h2>Structures de contrôle</h2>
+                <p>Les structures de contrôle sont similaires à celles du java (if, for, while, switch…), à ceci près que la plupart des structures de Kotlin sont des expressions, et donc leur résultat peuvent être affectés à des variables, telles que nous l'avons vu dans la section précédente ; mais également, l'équivalent de la structure switch en Kotlin est beaucoup plus simple d'utilisation et beaucoup plus puissante.
+
+L'instruction while (ou do … while) en Kotlin, tout comme en Java, ne retourne pas d'expression. Elle s'utilise aussi comme en Java : rien de nouveau.
+var i = 0
+while (i < 10) {
+  i += 1
+  println(i)
+}
+
+var j = 0
+do {
+   j += 1
+   println(j)
+} while (j < 10)
+L'instruction for : 
+for (i in 0..10) print(i)</p>
+                <h2>Les tableaux</h2>
+                    <p>Tout d'abord, en Kotlin, les tableaux sont représentés par la classe générique Array : ainsi l'on peut déclarer par exemple, un Array<Int>, un Array<String>, voire même un Array<Personne> (type personnel défini peu avant dans ce chapitre). Evidement, un Array ne peut contenir que des valeurs d'un même type commun.
+
+On peut construire un Array de deux manières différentes : soit par le constructeur Array, soit par la fonction arrayOf. La fonction arrayOf est plus proche de ce que l'on connaît en Java, tandis que le constructeur Array permet de bénéficier de plus de contrôle sur l'initialisation :
+ 
+
+val tableau1 = arrayOf(2,10,-1,4,9)
+val tableau2 = Array(10, { i -> i * 2 })</p>
+
+                <aside>
+                    <a href="../questions/kotlin.html">Aller au QUIZZ</a>
+                    <a href="android.html">Prohain cours</a>
+                </aside>
+            </section>
+            <aside>
+                <ul>
+                    <li><a href="#">Historique</a></li>
+                    <li><a href="#">Declaration des variable</a></li>
+                    <li><a href="#">Structures de contrôle </a></li>
+                    <li><a href="#">Les tableaux</a></li>
+                    <li><a href="#">Quizz</a></li>
+                </ul>
+            </aside>
+            <div style="clear: both"></div>
+        </div>
+    <!--
+    <a class="effet-gauche" href="../questions/cours1.html">Passer Aux Questions</a>-->
+    </body>
+</html>

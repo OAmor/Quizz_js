@@ -1,13 +1,13 @@
 
 body{
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header nav{
     padding: 0 7%;
     height: 64px;
-    box-shadow: 0px 30px 18px -18px #000;
+    box-shadow: -30px 23px 40px -25px #000;
     position: relative;
     padding: 0px 8%;
     z-index: 99;
@@ -16,6 +16,7 @@ header nav{
 header nav>img{
     width: 14%;
     float: left;
+    margin: -2px 0;
 }
 
 header nav>ul{
@@ -33,7 +34,7 @@ header nav>ul li a {
     text-decoration: none;
     padding: 15% 35px;
     display: block;
-    -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
+    -webkit-background-image: linear-gradient(to right,#263e74,#100065);
     background-image: linear-gradient(to right,#263e74,#28006a);
     color:transparent;
     -webkit-background-clip: text;
@@ -42,6 +43,14 @@ header nav>ul li a {
 }
 
 header nav>ul li a.active{
+    -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
+    background-image: linear-gradient(to right,#263e74,#28006a);
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    color: white;
+}
+
+header nav>ul li a:hover{
     -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
     background-image: linear-gradient(to right,#263e74,#28006a);
     -webkit-background-clip: unset;
@@ -62,8 +71,8 @@ header>div .overlay{
     display: block;
     width: 100%;
     height: 100%;
-    opacity: .4;
-    background-image: linear-gradient(to right,#fff,#000);
+    opacity: .8;
+    background-image: linear-gradient(to right,#fff,#ffffff6b);
 }
 header>div article{
     position: absolute;
@@ -73,7 +82,7 @@ header>div article{
     color:#1c004a;;
 }
 header>div article h1{
-    font-size: 45px;
+    font-size: 65px;
     margin-bottom: 10px;
 }
 header>div article P{
@@ -99,6 +108,7 @@ header>div article P{
 
 #container section h2{
     font-size: 32px;
+    color: #28006a;
 }
 
 #container section p{
@@ -113,7 +123,7 @@ header>div article P{
 #container section>aside a{
     display: inline-block;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 15px 40px;
     font-weight: bold;
 }
 
@@ -124,8 +134,14 @@ header>div article P{
     margin-right: 50px;
 }
 #container section>aside a:last-child{
-    border: 1px solid #28006a;
+    border: 3px solid #28006a;
     color: #28006a;
+}
+
+#container section>aside a:hover:last-child{
+     -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
+    background-image: linear-gradient(to right,#263e74,#28006a);
+    color: #fff;
 }
 
 #container>aside{
@@ -133,7 +149,7 @@ header>div article P{
     position: absolute;
     height: 100%;
     right: 0;
-    box-shadow: -8px 4px 13px -5px #333;
+    box-shadow: -9px -3px 15px -14px #000;
 }
 #container>aside ul{
     list-style: none;
