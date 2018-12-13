@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+main{
+    background-image: url('../images/cours-cover.jpg');
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    position: relative;
+}
+main>.overlay{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-color: #fff;
+}
+
+section header img{
+    width: 22%;
+}
+section header p{
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
+    background-image: linear-gradient(to right,#263e74,#28006a);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+
+section {
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+section article{
+    margin: 25px auto;
+}
+
+section article a{
+    text-decoration: none;
+    width: 25%;
+    display: inline-block;
+    background-image: linear-gradient(to right,#263e74,#18164D);
+    padding: 31px;
+    margin: 10px;
+    color: #fff;
+    height: 15%;
+    font-size: 25px;
+    font-weight: bold;
+}
+section article a:hover {
+    background: #fff;
+    border: 3px solid #18164D;
+    font-weight: bold;
+    color: #263e74;
+    margin: 7px;
+}
