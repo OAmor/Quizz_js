@@ -46,14 +46,14 @@ section article:first-child h1{
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    margin-top: 40px;
 }
 section article:first-child p{
-    margin-bottom: 30px;
+    margin-top: -10px;
+    margin-bottom: 40px;
 }
 section article:first-child a{
-    margin: 20px 22%;
     padding: 10px 40px;
-    border-radius: 20px;
     border: none;
     color: #fff;
     background-image: linear-gradient(to right,#263e74,#18164D);
