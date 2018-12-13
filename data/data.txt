@@ -175,7 +175,7 @@ Ses principaux avantages, pour reprendre les principaux arguments du site offici
 
 
 
-- Declaratiiondes variable
+- Declaration des variable
 
 En Kotlin, on distingue les variables dont on peut changer la valeur, et les variables immuables qui ne sont pas tout à fait des constantes :
 

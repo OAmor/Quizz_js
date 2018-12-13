@@ -1,6 +1,6 @@
 
 var data = {
-    'cours1':[
+    'java':[
         {question:'test question 1',
             response:{
             variable: 'b',
@@ -26,7 +26,7 @@ var data = {
             }
         }
     ],
-    'cours2':[
+    'android':[
         {question:'test question 1',
             response:{
                 variable: 'a',
@@ -35,23 +35,23 @@ var data = {
         },
         {question:'test question 2',
             response:{
-                variable: 'b',
+                variable: 'd',
                 content : 'test response 1'
             }
         },
         {question:'test question 3',
             response:{
-                variable: 'c',
+                variable: 'a',
                 content : 'test response 1'
             }
         },
         {question:'test question 0',
             response:{
-                variable: 'd',
+                variable: 'c',
                 content : 'test response 1'
             }
         }
-    ],'cours3':[
+    ],'kotlin':[
         {question:'test question 1',
             response:{
                 variable: 'a',
@@ -66,38 +66,38 @@ var data = {
         },
         {question:'test question 3',
             response:{
-                variable: 'c',
+                variable: 'a',
                 content : 'test response 1'
             }
         },
         {question:'test question 0',
             response:{
-                variable: 'd',
+                variable: 'c',
                 content : 'test response 1'
             }
         }
-    ],'cours4':[
+    ],'git':[
         {question:'test question 1',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 2',
-            response:{
-                variable: 'b',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 3',
             response:{
                 variable: 'c',
                 content : 'test response 1'
             }
         },
+        {question:'test question 2',
+            response:{
+                variable: 'a',
+                content : 'test response 1'
+            }
+        },
+        {question:'test question 3',
+            response:{
+                variable: 'a',
+                content : 'test response 1'
+            }
+        },
         {question:'test question 0',
             response:{
-                variable: 'd',
+                variable: 'b',
                 content : 'test response 1'
             }
         }
