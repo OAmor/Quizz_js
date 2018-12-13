@@ -17,10 +17,11 @@ function calcScore(course) {
         result = document.getElementById('result');
 
     switch (course){
-        case 1 : quizz = data.cours1;break;
-        case 2 : quizz = data.cours2;break;
-        case 3 : quizz = data.cours3;break;
-        case 4 : quizz = data.cours4;break;
+        case 1 : quizz = data.java;break;
+        case 2 : quizz = data.android;break;
+        case 3 : quizz = data.kotlin;break;
+        case 4 : quizz = data.git;break;
+        case 5 : quizz = data.cpp;break;
     }
 
     for(var i=1; i<=nbr;i++){
