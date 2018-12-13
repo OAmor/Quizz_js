@@ -116,8 +116,7 @@ input {
     cursor: pointer;
 }
 input:checked + label {
-    background: #00A99D;
-    color: #FFF;
+    background: #F0F0FC;
 }
 
 label{
