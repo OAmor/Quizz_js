@@ -94,71 +94,72 @@ header>div article P{
 
 /* Cours Contenu */
 
-#container{
+main{
     width: 90%;
     margin: 0 auto;
     position: relative;
 }
 
-#container section{
+main section{
     width: 75%;
     float: left;
     padding: 20px;
 }
 
-#container section h2{
+main section h2{
     font-size: 32px;
     color: #28006a;
 }
 
-#container section p{
+main section p,
+main section ul{
     font-size: 14px;
     text-align: justify;
     color: #666;
 }
-#container section>aside{
+main section>aside{
     margin: 40px auto;
     width: 60%;
 }
-#container section>aside a{
+main section>aside a{
     display: inline-block;
     text-decoration: none;
     padding: 15px 40px;
     font-weight: bold;
 }
 
-#container section>aside a:first-child{
+main section>aside a:first-child{
     -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
     background-image: linear-gradient(to right,#263e74,#28006a);
     color: #fff;
     margin-right: 50px;
 }
-#container section>aside a:last-child{
+main section>aside a:last-child{
     border: 3px solid #28006a;
     color: #28006a;
 }
 
-#container section>aside a:hover:last-child{
+main section>aside a:hover:last-child{
      -webkit-background-image: linear-gradient(to right,#263e74,#28006a);
     background-image: linear-gradient(to right,#263e74,#28006a);
     color: #fff;
 }
 
-#container>aside{
+main>aside{
     width: 20%;
     position: absolute;
     height: 100%;
     right: 0;
     box-shadow: -9px -3px 15px -14px #000;
 }
-#container>aside ul{
+main>aside ul{
     list-style: none;
     margin-top: 30px;
 }
-#container>aside ul li{
+main>aside ul li{
     margin-bottom: 25px;
 }
-#container aside ul li a{
+main aside ul li a{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
