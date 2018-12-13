@@ -3,7 +3,7 @@ var data = {
     'cours1':[
         {question:'test question 1',
             response:{
-            variable: 'a',
+            variable: 'b',
             content : 'test response 1'
          }
         },
