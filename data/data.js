@@ -1,131 +1,31 @@
 
 var data = {
     'java':[
-        {question:'test question 1',
-            response:{
-            variable: 'b',
-            content : 'test response 1'
-         }
-        },
-        {question:'test question 2',
-            response:{
-                variable: 'b',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 3',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 0',
-            response:{
-                variable: 'd',
-                content : 'test response 1'
-            }
-        }
+        {variable: 'b'},
+        {variable: 'b'},
+        {variable: 'c'},
+        {variable: 'd'}
     ],
     'android':[
-        {question:'test question 1',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 2',
-            response:{
-                variable: 'd',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 3',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 0',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
-            }
-        }
+        {variable: 'a'},
+        {variable: 'd'},
+        {variable: 'a'},
+        {variable: 'c'}
     ],'kotlin':[
-        {question:'test question 1',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 2',
-            response:{
-                variable: 'b',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 3',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 0',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
-            }
-        }
+        {variable: 'a'},
+        {variable: 'b'},
+        {variable: 'a'},
+        {variable: 'c'}
     ],'git':[
-        {question:'test question 1',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 2',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 3',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 0',
-            response:{
-                variable: 'b',
-                content : 'test response 1'
-            }
-        }
+        {variable: 'c'},
+        {variable: 'a'},
+        {variable: 'a'},
+        {variable: 'b'}
     ],'cpp':[
-        {question:'test question 1',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 2',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 3',
-            response:{
-                variable: 'b',
-                content : 'test response 1'
-            }
-        },
-        {question:'test question 0',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
-            }
-        }
+        {variable: 'a' },
+        {variable: 'c'},
+        {variable: 'b'},
+        {variable: 'c'}
     ]
 }
 

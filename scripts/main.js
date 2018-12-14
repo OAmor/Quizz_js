@@ -16,6 +16,9 @@ function calcScore(course) {
         questions = document.getElementsByClassName('question-content'),
         result = document.getElementById('result');
 
+    document.getElementById('left_col').setAttribute('display','none');
+
+    console.log("what");
     switch (course){
         case 1 : quizz = data.java;break;
         case 2 : quizz = data.android;break;
@@ -26,10 +29,8 @@ function calcScore(course) {
 
     for(var i=1; i<=nbr;i++){
         var j,res = getResponse('q'+i),
-            answer = quizz[i-1].response.variable,
+            answer = quizz[i-1].variable,
             answers = questions[i-1].getElementsByTagName('li');
-
-        console.log("compare q"+i +"= "+res+" with : "+quizz[i-1].response.variable);
         if(res == answer){
             score++;
         }
@@ -44,8 +45,7 @@ function calcScore(course) {
             }
         }
     }
-
-
+    document.getElementsByClassName("effet-centre")[0].style.display = "none"
     result.innerText = "Votre Score = "+score + " / "+nbr;
     result.style.visibility = "visible"
 }
