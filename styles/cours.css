@@ -21,9 +21,9 @@ header nav>img{
 
 header nav>ul{
     float: right;
-    list-style: none;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 header nav>ul li{
@@ -32,7 +32,7 @@ header nav>ul li{
 }
 header nav>ul li a {
     text-decoration: none;
-    padding: 15% 35px;
+    padding: 20px 35px;
     display: block;
     -webkit-background-image: linear-gradient(to right,#263e74,#100065);
     background-image: linear-gradient(to right,#263e74,#28006a);
@@ -40,6 +40,7 @@ header nav>ul li a {
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: bold;
+    height: 100%;
 }
 
 header nav>ul li a.active{

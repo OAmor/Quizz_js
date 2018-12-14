@@ -9,10 +9,11 @@
             <nav>
                 <img src="../../images/EduGateLogo.png" alt="logo">
                 <ul>
-                    <li><a href="#" class="active">Java</a></li>
-                    <li><a href="#">Cours 02</a></li>
-                    <li><a href="#">Cours 03</a></li>
-                    <li><a href="#">Cours 04</a></li>
+                    <li><a href="android.html">ANDROID</a></li>
+                    <li><a href="java.html">JAVA</a></li>
+                    <li><a href="cpp.html">C++</a></li>
+                    <li><a href="kotlin.html">KOTLIN</a></li>
+                    <li><a href="git.html" class="active">GIT</a></li>
                 </ul>
             </nav>
             <div style="background-image:url('../../images/css-cover.jpg') ">
@@ -25,7 +26,7 @@
         </header>
         <main>
             <section>
-                <h2>Historique</h2>
+                <h2 id="hist">Historique</h2>
                 <p>Si vous avez déjà travaillé sur un projet informatique, que ce soit un petit projet personnel ou un plus gros projet professionnel, vous avez certainement déjà rencontré un de ces problèmes :
 <ul><li>
     « Qui a modifié le fichier X, il marchait bien avant et maintenant il provoque des bugs ! » ;
@@ -43,7 +44,7 @@ Très puissant et récent, il a été créé par Linus Torvalds, qui est entre a
                 <h2>Créer un nouveau dépôt ou cloner un dépôt existant</h2>
                 <p>Pour commencer à travailler avec Git, il y a deux solutions :
 
-    soit vous créez un nouveau dépôt vide, si vous souhaitez commencer un nouveau projet ;
+                    soit vous créez un nouveau dépôt vide, si vous souhaitez commencer un nouveau projet ;
 
     soit vous clonez un dépôt existant, c’est-à-dire que vous récupérez tout l’historique des changements d’un projet pour pouvoir travailler dessus.
     <ul><li>
@@ -53,7 +54,7 @@ Très puissant et récent, il a été créé par Linus Torvalds, qui est entre a
    <li>Cloner un dépôt existant : <code>git clone dépôt_url</code>
     Example : <code>git clone https://github.com/OAmor/Quizz_js/</code></li>
                 </p>
-                <h2>Modifier le code et effectuer des commits</h2>
+                <h2 id="modif">Modifier le code et effectuer des commits</h2>
                 <p>La commande  git status  vous indique les fichiers que vous avez modifiés récemment,
   Git vous liste tous les fichiers qui ont changé sur le disque. Il peut aussi bien détecter les modifications que les ajouts, les suppressions et les renommages.
     pour commiter : 
@@ -66,7 +67,7 @@ Très puissant et récent, il a été créé par Linus Torvalds, qui est entre a
 Lorsque vous avez effectué un commit, vous devriez donc le voir dans  <br><code><b>git log</b></code> </p>
 
 
-    <h2>Modifier le code et effectuer des commits</h2>
+                <h2 id="modif2">Modifier le code et effectuer des commits</h2>
                 <p>La commande  git status  vous indique les fichiers que vous avez modifiés récemment,
   Git vous liste tous les fichiers qui ont changé sur le disque. Il peut aussi bien détecter les modifications que les ajouts, les suppressions et les renommages.
     pour commiter : 
@@ -83,12 +84,12 @@ Lorsque vous avez effectué un commit, vous devriez donc le voir dans  <br><code
             </section>
             <aside>
                 <ul>
-                    <li><a href="#">Historique</a></li>
-                    <li><a href="#">Créer un nouveau dépôt ou cloner un dépôt existant</a></li>
-                    <li><a href="#">Modifier le code et effectuer des commits</a></li>
-                    <li><a href="#">Vérifions les logs</a></li>
-                    <li><a href="#">Annuler les modifications d’un fichier avant un commit</a></li>
-                    <li><a href="#">Quizz</a></li>
+                    <li><a href="#hist">Historique</a></li>
+                    <li><a href="#creation">Créer un nouveau dépôt ou cloner un dépôt existant</a></li>
+                    <li><a href="#modif">Modifier le code et effectuer des commits</a></li>
+                    <li><a href="#verif">Vérifions les logs</a></li>
+                    <li><a href="#annuler">Annuler les modifications d’un fichier avant un commit</a></li>
+                    <li><a href="#quizz">Quizz</a></li>
                 </ul>
             </aside>
             <div style="clear: both"></div>
