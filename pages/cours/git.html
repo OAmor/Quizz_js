@@ -1,100 +1,144 @@
 <html>
-    <head>
-        <title>Git</title>
-        <link rel="stylesheet" href="../../styles/cours.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img src="../../images/EduGateLogo.png" alt="logo">
+
+<head>
+    <title>Git</title>
+    <link rel="stylesheet" href="../../styles/cours.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../../images/EduGateLogo.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="android.html">ANDROID</a>
+                </li>
+                <li>
+                    <a href="java.html">JAVA</a>
+                </li>
+                <li>
+                    <a href="cpp.html">C++</a>
+                </li>
+                <li>
+                    <a href="kotlin.html">KOTLIN</a>
+                </li>
+                <li>
+                    <a href="git.html" class="active">GIT</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="background-image:url('../../images/css-cover.jpg') ">
+            <div class="overlay"></div>
+            <article>
+                <h1>Git</h1>
+
+            </article>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 id="hist">Historique</h2>
+            <p>Si vous avez déjà travaillé sur un projet informatique, que ce soit un petit projet personnel ou un plus gros
+                projet professionnel, vous avez certainement déjà rencontré un de ces problèmes :
                 <ul>
-                    <li><a href="android.html">ANDROID</a></li>
-                    <li><a href="java.html">JAVA</a></li>
-                    <li><a href="cpp.html">C++</a></li>
-                    <li><a href="kotlin.html">KOTLIN</a></li>
-                    <li><a href="git.html" class="active">GIT</a></li>
+                    <li>
+                        « Qui a modifié le fichier X, il marchait bien avant et maintenant il provoque des bugs ! » ;
+                    </li>
+                    <li>« Robert, tu peux m’aider en travaillant sur le fichier X pendant que je travaille sur le fichier Y ?
+                        Attention à ne pas toucher au fichier Y car si on travaille dessus en même temps je risque d’écraser
+                        tes modifications ! » ;
+                    </li>
+                    <li>« Qui a ajouté cette ligne de code dans ce fichier ? Elle ne sert à rien ! » ;
+                    </li>
+                    <li>« À quoi servent ces nouveaux fichiers et qui les a ajoutés au code du projet ? » ;
+                    </li>
+                    <li>« Quelles modifications avions-nous faites pour résoudre le bug de la page qui se ferme toute seule ?
+                        »</li>
                 </ul>
-            </nav>
-            <div style="background-image:url('../../images/css-cover.jpg') ">
-                <div class="overlay"></div>
-                <article>
-                    <h1>Git</h1>
-                
-                </article>
-            </div>
-        </header>
-        <main>
-            <section>
-                <h2 id="hist">Historique</h2>
-                <p>Si vous avez déjà travaillé sur un projet informatique, que ce soit un petit projet personnel ou un plus gros projet professionnel, vous avez certainement déjà rencontré un de ces problèmes :
-<ul><li>
-    « Qui a modifié le fichier X, il marchait bien avant et maintenant il provoque des bugs ! » ;
-</li>
-    <li>« Robert, tu peux m’aider en travaillant sur le fichier X pendant que je travaille sur le fichier Y ? Attention à ne pas toucher au fichier Y car si on travaille dessus en même temps je risque d’écraser tes modifications ! » ;
-</li>
-    <li>« Qui a ajouté cette ligne de code dans ce fichier ? Elle ne sert à rien ! » ;
-</li>
-    <li>« À quoi servent ces nouveaux fichiers et qui les a ajoutés au code du projet ? » ;
-</li>
-    <li>« Quelles modifications avions-nous faites pour résoudre le bug de la page qui se ferme toute seule ? »</li></ul>
-    Si ces problèmes-là vous parlent, vous auriez dû utiliser un logiciel de gestion de versions
-    Dans ce tutoriel, je vais vous présenter Git, Il est 
-Très puissant et récent, il a été créé par Linus Torvalds, qui est entre autres l’homme à l’origine de Linux. Il se distingue par sa rapidité et sa gestion des branches qui permettent de développer en parallèle de nouvelles fonctionnalités.</p>
+                <p>Si ces problèmes-là vous parlent, vous auriez dû utiliser un logiciel de gestion de versions Dans ce tutoriel,
+                    je vais vous présenter Git, Il est Très puissant et récent, il a été créé par Linus Torvalds, qui est
+                    entre autres l’homme à l’origine de Linux. Il se distingue par sa rapidité et sa gestion des branches
+                    qui permettent de développer en parallèle de nouvelles fonctionnalités.</p>
                 <h2>Créer un nouveau dépôt ou cloner un dépôt existant</h2>
-                <p>Pour commencer à travailler avec Git, il y a deux solutions :
+                <p>Pour commencer à travailler avec Git, il y a deux solutions : soit vous créez un nouveau dépôt vide, si vous
+                    souhaitez commencer un nouveau projet ; soit vous clonez un dépôt existant, c’est-à-dire que vous récupérez
+                    tout l’historique des changements d’un projet pour pouvoir travailler dessus.</p>
+                    <ul>
+                        <li>
+                            Créer un nouveau dépôt :
+                            <code>git init</code>
+                        </li>
 
-                    soit vous créez un nouveau dépôt vide, si vous souhaitez commencer un nouveau projet ;
-
-    soit vous clonez un dépôt existant, c’est-à-dire que vous récupérez tout l’historique des changements d’un projet pour pouvoir travailler dessus.
-    <ul><li>
-     Créer un nouveau dépôt : <code>git init</code>
-</li>
-
-   <li>Cloner un dépôt existant : <code>git clone dépôt_url</code>
-    Example : <code>git clone https://github.com/OAmor/Quizz_js/</code></li>
+                        <li>Cloner un dépôt existant :
+                            <code>git clone dépôt_url</code> Example :
+                            <code>git clone https://github.com/OAmor/Quizz_js/</code>
+                        </li>
+                        </ul>
                 </p>
                 <h2 id="modif">Modifier le code et effectuer des commits</h2>
-                <p>La commande  git status  vous indique les fichiers que vous avez modifiés récemment,
-  Git vous liste tous les fichiers qui ont changé sur le disque. Il peut aussi bien détecter les modifications que les ajouts, les suppressions et les renommages.
-    pour commiter : 
-<br>
-    <code>git add .<br>
-    git commit -m "Mesage sur les modifications"<br></code></p>
+                <p>La commande git status vous indique les fichiers que vous avez modifiés récemment, Git vous liste tous les
+                    fichiers qui ont changé sur le disque. Il peut aussi bien détecter les modifications que les ajouts,
+                    les suppressions et les renommages. pour commiter :
+                    <br>
+                    <code>git add .<br>
+    git commit -m "Mesage sur les modifications"<br></code>
+                </p>
                 <h2>Vérifions les logs</h2>
-                    <p>Il est possible à tout moment de consulter l’historique des commits : ce sont les logs. Vous pouvez ainsi retrouver tout ce qui a été changé depuis les débuts du projet.
-
-Lorsque vous avez effectué un commit, vous devriez donc le voir dans  <br><code><b>git log</b></code> </p>
+                <p>Il est possible à tout moment de consulter l’historique des commits : ce sont les logs. Vous pouvez ainsi
+                    retrouver tout ce qui a été changé depuis les débuts du projet. Lorsque vous avez effectué un commit,
+                    vous devriez donc le voir dans
+                    <br>
+                    <code><b>git log</b></code> </p>
 
 
                 <h2 id="modif2">Modifier le code et effectuer des commits</h2>
-                <p>La commande  git status  vous indique les fichiers que vous avez modifiés récemment,
-  Git vous liste tous les fichiers qui ont changé sur le disque. Il peut aussi bien détecter les modifications que les ajouts, les suppressions et les renommages.
-    pour commiter : 
-<br>
-    <code>git add .<br>
-    git commit -m "Mesage sur les modifications"</code></p>
+                <p>La commande git status vous indique les fichiers que vous avez modifiés récemment, Git vous liste tous les
+                    fichiers qui ont changé sur le disque. Il peut aussi bien détecter les modifications que les ajouts,
+                    les suppressions et les renommages. pour commiter :
+                    <br>
+                    <code>git add .<br>
+    git commit -m "Mesage sur les modifications"</code>
+                </p>
                 <h2>Annuler les modifications d’un fichier avant un commit</h2>
-                    <p>Si vous avez modifié plusieurs fichiers mais que vous n’avez pas encore envoyé le commit et que vous voulez restaurer un fichier tel qu’il était au dernier commit, utilisez  <br><code>git checkout</code></p></ul>
+                <p>Si vous avez modifié plusieurs fichiers mais que vous n’avez pas encore envoyé le commit et que vous voulez
+                    restaurer un fichier tel qu’il était au dernier commit, utilisez
+                    <br>
+                    <code>git checkout</code>
+                </p>
+                </ul>
 
                 <aside>
                     <a href="../questions/git.html">Aller au QUIZZ</a>
                     <a href="#.html">Prohain cours ></a>
                 </aside>
-            </section>
-            <aside>
-                <ul>
-                    <li><a href="#hist">Historique</a></li>
-                    <li><a href="#creation">Créer un nouveau dépôt ou cloner un dépôt existant</a></li>
-                    <li><a href="#modif">Modifier le code et effectuer des commits</a></li>
-                    <li><a href="#verif">Vérifions les logs</a></li>
-                    <li><a href="#annuler">Annuler les modifications d’un fichier avant un commit</a></li>
-                    <li><a href="#quizz">Quizz</a></li>
-                </ul>
-            </aside>
-            <div style="clear: both"></div>
-        </main>
+        </section>
+        <aside>
+            <ul>
+                <li>
+                    <a href="#hist">Historique</a>
+                </li>
+                <li>
+                    <a href="#creation">Créer un nouveau dépôt ou cloner un dépôt existant</a>
+                </li>
+                <li>
+                    <a href="#modif">Modifier le code et effectuer des commits</a>
+                </li>
+                <li>
+                    <a href="#verif">Vérifions les logs</a>
+                </li>
+                <li>
+                    <a href="#annuler">Annuler les modifications d’un fichier avant un commit</a>
+                </li>
+                <li>
+                    <a href="#quizz">Quizz</a>
+                </li>
+            </ul>
+        </aside>
+        <div style="clear: both"></div>
+    </main>
     <!--
     <a class="effet-gauche" href="../questions/cours1.html">Passer Aux Questions</a>-->
-    </body>
+</body>
+
 </html>
