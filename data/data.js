@@ -1,101 +1,31 @@
 
 var data = {
     'java':[
-        {response:{
-            variable: 'b'
-         }
-        },
-        {response:{
-                variable: 'b'
-            }
-        },
-        {response:{
-                variable: 'c'
-            }
-        },
-        {esponse:{
-                variable: 'd'
-            }
-        }
+        {variable: 'b'},
+        {variable: 'b'},
+        {variable: 'c'},
+        {variable: 'd'}
     ],
     'android':[
-        {response:{
-                variable: 'a'
-            }
-        },
-        {response:{
-                variable: 'd'
-            }
-        },
-        {qresponse:{
-                variable: 'a'
-            }
-        },
-        {response:{
-                variable: 'c'
-            }
-        }
+        {variable: 'a'},
+        {variable: 'd'},
+        {variable: 'a'},
+        {variable: 'c'}
     ],'kotlin':[
-        {
-            response:{
-                variable: 'a'
-            }
-        },
-        {
-            response:{
-                variable: 'b'
-            }
-        },
-        {
-            response:{
-                variable: 'a'
-            }
-        },
-        {
-            response:{
-                variable: 'c'
-            }
-        }
+        {variable: 'a'},
+        {variable: 'b'},
+        {variable: 'a'},
+        {variable: 'c'}
     ],'git':[
-        {
-            response:{
-                variable: 'c'
-            }
-        },
-        {
-            response:{
-                variable: 'a'
-            }
-        },
-        {
-            response:{
-                variable: 'a'
-            }
-        },
-        {
-            response:{
-                variable: 'b'
-            }
-        }
+        {variable: 'c'},
+        {variable: 'a'},
+        {variable: 'a'},
+        {variable: 'b'}
     ],'cpp':[
-        {response:{
-                variable: 'a'
-            }
-        },
-        {
-            response:{
-                variable: 'c'
-            }
-        },
-        {
-            response:{
-                variable: 'b'
-            }
-        },
-        {response:{
-                variable: 'c'
-            }
-        }
+        {variable: 'a' },
+        {variable: 'c'},
+        {variable: 'b'},
+        {variable: 'c'}
     ]
 }
 

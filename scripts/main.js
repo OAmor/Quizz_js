@@ -26,10 +26,10 @@ function calcScore(course) {
 
     for(var i=1; i<=nbr;i++){
         var j,res = getResponse('q'+i),
-            answer = quizz[i-1].response.variable,
+            answer = quizz[i-1].variable,
             answers = questions[i-1].getElementsByTagName('li');
 
-        console.log("compare q"+i +"= "+res+" with : "+quizz[i-1].response.variable);
+        console.log("compare q"+i +"= "+res+" with : "+quizz[i-1].variable);
         if(res == answer){
             score++;
         }
