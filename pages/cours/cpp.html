@@ -1,91 +1,123 @@
 <html>
-    <head>
-        <title>C++</title>
-        <link rel="stylesheet" href="../../styles/cours.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="../../index.html"><img src="../../images/EduGateLogo.png" alt="logo"></a>
+
+<head>
+    <title>C++</title>
+    <link rel="stylesheet" href="../../styles/cours.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">
+                <img src="../../images/EduGateLogo.png" alt="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="android.html">ANDROID</a>
+                </li>
+                <li>
+                    <a href="java.html">JAVA</a>
+                </li>
+                <li>
+                    <a href="cpp.html" class="active">C++</a>
+                </li>
+                <li>
+                    <a href="kotlin.html">KOTLIN</a>
+                </li>
+                <li>
+                    <a href="git.html">GIT</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="background-image:url('../../images/css-cover.jpg') ">
+            <div class="overlay"></div>
+            <article>
+                <h1>C++</h1>
+
+            </article>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 id="hist">Historique</h2>
+            <p>Le langage C++ est un des langages les plus célèbres au monde. Très utilisé, notamment dans le secteur des jeux
+                vidéo qui apprécie ses performances et ses possibilités, le C++ est désormais incontournable pour les développeurs.
+                Le C++ est le descendant du langage C. Ces deux langages, bien que semblables au premier abord, sont néanmoins
+                différents. Le C++ propose de nouvelles fonctionnalités, comme la programmation orientée objet (POO). Elles
+                en font un langage très puissant qui permet de programmer avec une approche différente du langage C.</p>
+            <h2 id="var">Les variables et les opérateurs</h2>
+            <p>Nous commençons maintenant sérieusement la programmation. Dans ce chapitre, nous allons découvrir les variables.
+                On les retrouve dans la quasi-totalité des langages de programmation. Une variable est un élément qui stocke
+                des informations de toute sorte en mémoire : des chiffres, des résultats de calcul, des tableaux, des renseignements
+                fournis par l'utilisateur...
+
                 <ul>
-                    <li><a href="android.html">ANDROID</a></li>
-                    <li><a href="java.html">JAVA</a></li>
-                    <li><a href="cpp.html" class="active">C++</a></li>
-                    <li><a href="kotlin.html">KOTLIN</a></li>
-                    <li><a href="git.html">GIT</a></li>
+                    <li>les noms de variables sont constitués de lettres, de chiffres et du tiret-bas _ uniquement ;</li>
+                    <li>le premier caractère doit être une lettre (majuscule ou minuscule) ;</li>
+                    <li>on ne peut pas utiliser d'accents ;</li>
+                    <li>on ne peut pas utiliser d'espaces dans le nom.</li>
                 </ul>
-            </nav>
-            <div style="background-image:url('../../images/css-cover.jpg') ">
-                <div class="overlay"></div>
-                <article>
-                    <h1>C++</h1>
-                
-                </article>
-            </div>
-        </header>
-        <main>
-            <section>
-                <h2 id="hist">Historique</h2>
-                <p>Le langage C++ est un des langages les plus célèbres au monde. Très utilisé, notamment dans le secteur des jeux vidéo qui
-                    apprécie ses performances et ses possibilités, le C++ est désormais incontournable pour les développeurs.
-Le C++ est le descendant du langage C. Ces deux langages, bien que semblables au premier abord, sont néanmoins différents. Le
-C++ propose de nouvelles fonctionnalités, comme la programmation orientée objet (POO). Elles en font un langage très puissant
-qui permet de programmer avec une approche différente du langage C.</p>
-                <h2 id="var">Les variables et les opérateurs</h2>
-                <p>Nous commençons maintenant sérieusement la programmation. Dans ce chapitre, nous allons découvrir les variables. On les retrouve dans la quasi-totalité des langages de programmation. Une variable est un élément qui stocke des informations de toute sorte en mémoire : des chiffres, des résultats de calcul, des tableaux, des renseignements fournis par l'utilisateur...
+                <p>Pattern : Acces_modifier type nom_de_variable;</p>
 
-                <ul><li>les noms de variables sont constitués de lettres, de chiffres et du tiret-bas _ uniquement ;</li>
-                <li>le premier caractère doit être une lettre (majuscule ou minuscule) ;</li>
-                <li>on ne peut pas utiliser d'accents ;</li>
-                <li>on ne peut pas utiliser d'espaces dans le nom.</li></ul>
-                    <p>Pattern : Acces_modifier type nom_de_variable;</p>
-
-                <ul>Acces modifier <li>public</li><li> protected</li> <li>private</li></ul> 
-                <ul>type  <li>int</li> <li>float</li> <li>String</li></ul>
+                <ul>Acces modifier
+                    <li>public</li>
+                    <li> protected</li>
+                    <li>private</li>
+                </ul>
+                <ul>type
+                    <li>int</li>
+                    <li>float</li>
+                    <li>String</li>
+                </ul>
                 <p>
-                <p>Example : int age;</p>
+                    <p>Example : int age;</p>
                 </p>
                 <h2 id="creation">Création des classes</h2>
-                <p>pour créer un objet, il faut d'abord créer une classe !
-Je m'explique : pour construire une maison, vous avez besoin d'un plan d'architecte non ? Eh bien imaginez simplement que la
-classe c'est le plan et que l'objet c'est la maison.
-« Créer une classe », c'est donc dessiner les plans de l'objet.
-Une fois que vous avez les plans, vous pouvez faire autant de maisons que vous voulez en vous basant sur ces plans. Pour les
-objets c'est pareil : une fois que vous avez fait la classe (le plan), vous pouvez créer autant d'objets du même type que vous
-voulez
+                <p>pour créer un objet, il faut d'abord créer une classe ! Je m'explique : pour construire une maison, vous
+                    avez besoin d'un plan d'architecte non ? Eh bien imaginez simplement que la classe c'est le plan et que
+                    l'objet c'est la maison. « Créer une classe », c'est donc dessiner les plans de l'objet. Une fois que
+                    vous avez les plans, vous pouvez faire autant de maisons que vous voulez en vous basant sur ces plans.
+                    Pour les objets c'est pareil : une fois que vous avez fait la classe (le plan), vous pouvez créer autant
+                    d'objets du même type que vous voulez ex : class Etudiant{ }
 
-ex : class Etudiant{
-	
-}</p>
+                </p>
                 <h2 id="her">L'héritage</h2>
-                    <p>Comme je vous l'ai dit dans l'introduction, la notion d'héritage est l'un des fondements de la programmation orientée objet. Grâce
-                    à elle, nous pourrons créer des classes héritées (aussi appelées classes classes dérivées) de nos classes mères (aussi appelées
-                    classes classes de base). Nous pourrons créer autant de classes dérivées, par rapport à notre classe de base, que nous le
-                    souhaitons. De plus, nous pourrons nous servir d'une classe dérivée comme d'une classe de base pour élaborer encore une autre
-                    classe dérivée.
-                    ps : Java ne supporte pas l'héritage multiple ?
-
-                    ex : class Capitale : public Ville {
-}</p><br>
+                <p>Comme je vous l'ai dit dans l'introduction, la notion d'héritage est l'un des fondements de la programmation
+                    orientée objet. Grâce à elle, nous pourrons créer des classes héritées (aussi appelées classes classes
+                    dérivées) de nos classes mères (aussi appelées classes classes de base). Nous pourrons créer autant de
+                    classes dérivées, par rapport à notre classe de base, que nous le souhaitons. De plus, nous pourrons
+                    nous servir d'une classe dérivée comme d'une classe de base pour élaborer encore une autre classe dérivée.
+                    ps : Java ne supporte pas l'héritage multiple ? ex : class Capitale : public Ville { }
+                </p>
+                <br>
 
                 <aside>
                     <a href="../questions/cpp.html">Aller au QUIZZ</a>
                     <a href="java.html">Prohain cours ></a>
                 </aside>
-            </section>
-            <aside>
-                <ul>
-                    <li><a href="#hits">Historique</a></li>
-                    <li><a href="#var">Les variables et les opérateurs</a></li>
-                    <li><a href="#creation">Création des classes</a></li>
-                    <li><a href="#her">L'héritage</a></li>
-                    <li><a href="../questions/cpp.html">Quizz</a></li>
-                </ul>
-            </aside>
-            <div style="clear: both"></div>
-        </main>
-    <!--
-    <a class="effet-gauche" href="../questions/cours1.html">Passer Aux Questions</a>-->
-    </body>
+        </section>
+        <aside>
+            <ul>
+                <li>
+                    <a href="#hits">Historique</a>
+                </li>
+                <li>
+                    <a href="#var">Les variables et les opérateurs</a>
+                </li>
+                <li>
+                    <a href="#creation">Création des classes</a>
+                </li>
+                <li>
+                    <a href="#her">L'héritage</a>
+                </li>
+                <li>
+                    <a href="../questions/cpp.html">Quizz</a>
+                </li>
+            </ul>
+        </aside>
+        <div style="clear: both"></div>
+    </main>
+</body>
+
 </html>
