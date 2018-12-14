@@ -1,129 +1,99 @@
 
 var data = {
     'java':[
-        {question:'test question 1',
-            response:{
-            variable: 'b',
-            content : 'test response 1'
+        {response:{
+            variable: 'b'
          }
         },
-        {question:'test question 2',
-            response:{
-                variable: 'b',
-                content : 'test response 1'
+        {response:{
+                variable: 'b'
             }
         },
-        {question:'test question 3',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
+        {response:{
+                variable: 'c'
             }
         },
-        {question:'test question 0',
-            response:{
-                variable: 'd',
-                content : 'test response 1'
+        {esponse:{
+                variable: 'd'
             }
         }
     ],
     'android':[
-        {question:'test question 1',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
+        {response:{
+                variable: 'a'
             }
         },
-        {question:'test question 2',
-            response:{
-                variable: 'd',
-                content : 'test response 1'
+        {response:{
+                variable: 'd'
             }
         },
-        {question:'test question 3',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
+        {qresponse:{
+                variable: 'a'
             }
         },
-        {question:'test question 0',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
+        {response:{
+                variable: 'c'
             }
         }
     ],'kotlin':[
-        {question:'test question 1',
+        {
             response:{
-                variable: 'a',
-                content : 'test response 1'
+                variable: 'a'
             }
         },
-        {question:'test question 2',
+        {
             response:{
-                variable: 'b',
-                content : 'test response 1'
+                variable: 'b'
             }
         },
-        {question:'test question 3',
+        {
             response:{
-                variable: 'a',
-                content : 'test response 1'
+                variable: 'a'
             }
         },
-        {question:'test question 0',
+        {
             response:{
-                variable: 'c',
-                content : 'test response 1'
+                variable: 'c'
             }
         }
     ],'git':[
-        {question:'test question 1',
+        {
             response:{
-                variable: 'c',
-                content : 'test response 1'
+                variable: 'c'
             }
         },
-        {question:'test question 2',
+        {
             response:{
-                variable: 'a',
-                content : 'test response 1'
+                variable: 'a'
             }
         },
-        {question:'test question 3',
+        {
             response:{
-                variable: 'a',
-                content : 'test response 1'
+                variable: 'a'
             }
         },
-        {question:'test question 0',
+        {
             response:{
-                variable: 'b',
-                content : 'test response 1'
+                variable: 'b'
             }
         }
     ],'cpp':[
-        {question:'test question 1',
-            response:{
-                variable: 'a',
-                content : 'test response 1'
+        {response:{
+                variable: 'a'
             }
         },
-        {question:'test question 2',
+        {
             response:{
-                variable: 'c',
-                content : 'test response 1'
+                variable: 'c'
             }
         },
-        {question:'test question 3',
+        {
             response:{
-                variable: 'b',
-                content : 'test response 1'
+                variable: 'b'
             }
         },
-        {question:'test question 0',
-            response:{
-                variable: 'c',
-                content : 'test response 1'
+        {response:{
+                variable: 'c'
             }
         }
     ]
