@@ -176,16 +176,16 @@ h1{
     font-size: 20px;
 }
 
-#rowWithTwoColumn{
+.rowWithTwoColumn{
     width: 80%;
     margin: 30px auto;
 }
-#left_col {
+.left_col {
    float:left;
    width:50%;
 
 }
-#right_col {
+.right_col {
    float:right;
    width:50%;
 }
@@ -194,7 +194,7 @@ h1{
 }
 
 
-#left_col  a{
+.left_col  a{
     text-align: center;
     background: #18164D;
     text-decoration: none;
@@ -207,7 +207,7 @@ h1{
     font-weight: bold;
 
 }
-#right_col a{
+.right_col a{
     text-align: center;
     background: #FFFFFF;
     text-decoration: none;

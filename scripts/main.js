@@ -16,9 +16,7 @@ function calcScore(course) {
         questions = document.getElementsByClassName('question-content'),
         result = document.getElementById('result');
 
-    document.getElementById('left_col').setAttribute('display','none');
 
-    console.log("what");
     switch (course){
         case 1 : quizz = data.java;break;
         case 2 : quizz = data.android;break;
