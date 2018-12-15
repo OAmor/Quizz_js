@@ -13,7 +13,7 @@ header nav{
     z-index: 99;
 }
 
-header nav>img{
+header nav a >img{
     width: 14%;
     float: left;
     margin: -2px 0;
