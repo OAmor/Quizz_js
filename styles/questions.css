@@ -136,6 +136,7 @@ label{
     box-sizing: border-box;
     margin: 0px;
     color: #18164D;
+    cursor: pointer;
 }
 .question-content ul{
     padding: 0px;
